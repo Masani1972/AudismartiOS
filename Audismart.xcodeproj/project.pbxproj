@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		174963A51C5D8AC2004D04E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963A41C5D8AC2004D04E8 /* main.m */; };
 		174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963A71C5D8AC2004D04E8 /* AppDelegate.m */; };
-		174963AB1C5D8AC2004D04E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963AA1C5D8AC2004D04E8 /* ViewController.m */; };
 		174963AE1C5D8AC2004D04E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963AC1C5D8AC2004D04E8 /* Main.storyboard */; };
 		174963B01C5D8AC2004D04E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174963AF1C5D8AC2004D04E8 /* Assets.xcassets */; };
 		174963B31C5D8AC2004D04E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */; };
+		174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963BF1C5D8EF4004D04E8 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		174963A41C5D8AC2004D04E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		174963A61C5D8AC2004D04E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		174963A71C5D8AC2004D04E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		174963A91C5D8AC2004D04E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		174963AA1C5D8AC2004D04E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		174963AD1C5D8AC2004D04E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		174963AF1C5D8AC2004D04E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174963B21C5D8AC2004D04E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174963B41C5D8AC2004D04E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174963BE1C5D8EF4004D04E8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Audismart/Ingreso/ViewController.h; sourceTree = "<group>"; };
+		174963BF1C5D8EF4004D04E8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Audismart/Ingreso/ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,7 @@
 		174963971C5D8AC2004D04E8 = {
 			isa = PBXGroup;
 			children = (
+				174963BC1C5D8E25004D04E8 /* Ingreso */,
 				174963A21C5D8AC2004D04E8 /* Audismart */,
 				174963A11C5D8AC2004D04E8 /* Products */,
 			);
@@ -60,9 +61,6 @@
 			children = (
 				174963A61C5D8AC2004D04E8 /* AppDelegate.h */,
 				174963A71C5D8AC2004D04E8 /* AppDelegate.m */,
-				174963A91C5D8AC2004D04E8 /* ViewController.h */,
-				174963AA1C5D8AC2004D04E8 /* ViewController.m */,
-				174963AC1C5D8AC2004D04E8 /* Main.storyboard */,
 				174963AF1C5D8AC2004D04E8 /* Assets.xcassets */,
 				174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */,
 				174963B41C5D8AC2004D04E8 /* Info.plist */,
@@ -77,6 +75,16 @@
 				174963A41C5D8AC2004D04E8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		174963BC1C5D8E25004D04E8 /* Ingreso */ = {
+			isa = PBXGroup;
+			children = (
+				174963BE1C5D8EF4004D04E8 /* ViewController.h */,
+				174963BF1C5D8EF4004D04E8 /* ViewController.m */,
+				174963AC1C5D8AC2004D04E8 /* Main.storyboard */,
+			);
+			name = Ingreso;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				174963AB1C5D8AC2004D04E8 /* ViewController.m in Sources */,
 				174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */,
 				174963A51C5D8AC2004D04E8 /* main.m in Sources */,
+				174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +172,7 @@
 				174963AD1C5D8AC2004D04E8 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Audismart;
 			sourceTree = "<group>";
 		};
 		174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */ = {
@@ -265,6 +274,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.audismart.Audismart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -276,6 +286,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.audismart.Audismart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
