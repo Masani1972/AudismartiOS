@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172AED511C62FC9F0057426C /* ViewControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED501C62FC9F0057426C /* ViewControllerLogin.m */; };
+		172AED591C6307DE0057426C /* Constantes.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED581C6307DE0057426C /* Constantes.m */; };
+		172AED5C1C6439480057426C /* ViewControllerRegistroUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */; };
+		172AED5F1C7405030057426C /* JsonParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED5E1C7405030057426C /* JsonParams.m */; };
 		174963A51C5D8AC2004D04E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963A41C5D8AC2004D04E8 /* main.m */; };
 		174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963A71C5D8AC2004D04E8 /* AppDelegate.m */; };
 		174963AE1C5D8AC2004D04E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963AC1C5D8AC2004D04E8 /* Main.storyboard */; };
@@ -16,6 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172AED4F1C62FC9F0057426C /* ViewControllerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerLogin.h; path = Audismart/Ingreso/ViewControllerLogin.h; sourceTree = "<group>"; };
+		172AED501C62FC9F0057426C /* ViewControllerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerLogin.m; path = Audismart/Ingreso/ViewControllerLogin.m; sourceTree = "<group>"; };
+		172AED571C6307DE0057426C /* Constantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constantes.h; path = Audismart/Utilidades/Constantes.h; sourceTree = "<group>"; };
+		172AED581C6307DE0057426C /* Constantes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constantes.m; path = Audismart/Utilidades/Constantes.m; sourceTree = "<group>"; };
+		172AED5A1C6439480057426C /* ViewControllerRegistroUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerRegistroUser.h; path = Audismart/Ingreso/ViewControllerRegistroUser.h; sourceTree = "<group>"; };
+		172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerRegistroUser.m; path = Audismart/Ingreso/ViewControllerRegistroUser.m; sourceTree = "<group>"; };
+		172AED5D1C7405030057426C /* JsonParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JsonParams.h; path = Audismart/Utilidades/JsonParams.h; sourceTree = "<group>"; };
+		172AED5E1C7405030057426C /* JsonParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JsonParams.m; path = Audismart/Utilidades/JsonParams.m; sourceTree = "<group>"; };
 		174963A01C5D8AC2004D04E8 /* Audismart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audismart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174963A41C5D8AC2004D04E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		174963A61C5D8AC2004D04E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +51,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172AED531C6307650057426C /* Utilidades */ = {
+			isa = PBXGroup;
+			children = (
+				172AED571C6307DE0057426C /* Constantes.h */,
+				172AED581C6307DE0057426C /* Constantes.m */,
+				172AED5D1C7405030057426C /* JsonParams.h */,
+				172AED5E1C7405030057426C /* JsonParams.m */,
+			);
+			name = Utilidades;
+			sourceTree = "<group>";
+		};
 		174963971C5D8AC2004D04E8 = {
 			isa = PBXGroup;
 			children = (
+				172AED531C6307650057426C /* Utilidades */,
 				174963BC1C5D8E25004D04E8 /* Ingreso */,
 				174963A21C5D8AC2004D04E8 /* Audismart */,
 				174963A11C5D8AC2004D04E8 /* Products */,
@@ -83,6 +107,10 @@
 				174963BE1C5D8EF4004D04E8 /* ViewController.h */,
 				174963BF1C5D8EF4004D04E8 /* ViewController.m */,
 				174963AC1C5D8AC2004D04E8 /* Main.storyboard */,
+				172AED4F1C62FC9F0057426C /* ViewControllerLogin.h */,
+				172AED501C62FC9F0057426C /* ViewControllerLogin.m */,
+				172AED5A1C6439480057426C /* ViewControllerRegistroUser.h */,
+				172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */,
 			);
 			name = Ingreso;
 			sourceTree = "<group>";
@@ -157,6 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172AED5F1C7405030057426C /* JsonParams.m in Sources */,
+				172AED591C6307DE0057426C /* Constantes.m in Sources */,
+				172AED511C62FC9F0057426C /* ViewControllerLogin.m in Sources */,
+				172AED5C1C6439480057426C /* ViewControllerRegistroUser.m in Sources */,
 				174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */,
 				174963A51C5D8AC2004D04E8 /* main.m in Sources */,
 				174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */,
@@ -309,6 +341,7 @@
 				174963B91C5D8AC2004D04E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
