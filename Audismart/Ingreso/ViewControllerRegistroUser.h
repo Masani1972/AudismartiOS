@@ -9,5 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewControllerRegistroUser : ViewController
+@property (strong, nonatomic) IBOutlet UIScrollView *scroll;
 
 @end

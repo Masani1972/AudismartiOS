@@ -10,4 +10,11 @@
 
 @implementation ViewControllerRegistroUser
 
+@synthesize scroll;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+}
+
 @end
