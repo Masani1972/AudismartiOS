@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		172AED511C62FC9F0057426C /* ViewControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED501C62FC9F0057426C /* ViewControllerLogin.m */; };
+		172AED591C6307DE0057426C /* Constantes.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED581C6307DE0057426C /* Constantes.m */; };
+		172AED5C1C6439480057426C /* ViewControllerRegistroUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */; };
+		172AED5F1C7405030057426C /* JsonParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 172AED5E1C7405030057426C /* JsonParams.m */; };
+		174963A51C5D8AC2004D04E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963A41C5D8AC2004D04E8 /* main.m */; };
+		174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963A71C5D8AC2004D04E8 /* AppDelegate.m */; };
+		174963AE1C5D8AC2004D04E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963AC1C5D8AC2004D04E8 /* Main.storyboard */; };
+		174963B01C5D8AC2004D04E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174963AF1C5D8AC2004D04E8 /* Assets.xcassets */; };
+		174963B31C5D8AC2004D04E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */; };
+		174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963BF1C5D8EF4004D04E8 /* ViewController.m */; };
+		82CE58D21D05E3360086811F /* fondo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D01D05E3360086811F /* fondo@2x.png */; };
+		82CE58D31D05E3360086811F /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D11D05E3360086811F /* fondo.png */; };
+		82CE58D61D05E5100086811F /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D41D05E5100086811F /* logo2.png */; };
+		82CE58D71D05E5100086811F /* logo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D51D05E5100086811F /* logo2@2x.png */; };
+		82CE58DA1D05F8050086811F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D81D05F8050086811F /* logo.png */; };
+		82CE58DB1D05F8050086811F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D91D05F8050086811F /* logo@2x.png */; };
+		82CE58DE1D0608120086811F /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58DC1D0608120086811F /* bg@2x.png */; };
+		82CE58DF1D0608120086811F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58DD1D0608120086811F /* bg.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		172AED4F1C62FC9F0057426C /* ViewControllerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerLogin.h; path = Audismart/Ingreso/ViewControllerLogin.h; sourceTree = "<group>"; };
+		172AED501C62FC9F0057426C /* ViewControllerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerLogin.m; path = Audismart/Ingreso/ViewControllerLogin.m; sourceTree = "<group>"; };
+		172AED571C6307DE0057426C /* Constantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constantes.h; path = Audismart/Utilidades/Constantes.h; sourceTree = "<group>"; };
+		172AED581C6307DE0057426C /* Constantes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constantes.m; path = Audismart/Utilidades/Constantes.m; sourceTree = "<group>"; };
+		172AED5A1C6439480057426C /* ViewControllerRegistroUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerRegistroUser.h; path = Audismart/Ingreso/ViewControllerRegistroUser.h; sourceTree = "<group>"; };
+		172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerRegistroUser.m; path = Audismart/Ingreso/ViewControllerRegistroUser.m; sourceTree = "<group>"; };
+		172AED5D1C7405030057426C /* JsonParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JsonParams.h; path = Audismart/Utilidades/JsonParams.h; sourceTree = "<group>"; };
+		172AED5E1C7405030057426C /* JsonParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JsonParams.m; path = Audismart/Utilidades/JsonParams.m; sourceTree = "<group>"; };
+		174963A01C5D8AC2004D04E8 /* Aosmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aosmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		174963A41C5D8AC2004D04E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		174963A61C5D8AC2004D04E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		174963A71C5D8AC2004D04E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		174963AD1C5D8AC2004D04E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		174963AF1C5D8AC2004D04E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		174963B21C5D8AC2004D04E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		174963B41C5D8AC2004D04E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174963BE1C5D8EF4004D04E8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Audismart/Ingreso/ViewController.h; sourceTree = "<group>"; };
+		174963BF1C5D8EF4004D04E8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Audismart/Ingreso/ViewController.m; sourceTree = "<group>"; };
+		82CE58D01D05E3360086811F /* fondo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fondo@2x.png"; path = "Imagenes/fondo@2x.png"; sourceTree = "<group>"; };
+		82CE58D11D05E3360086811F /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo.png; path = Imagenes/fondo.png; sourceTree = "<group>"; };
+		82CE58D41D05E5100086811F /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = Imagenes/logo2.png; sourceTree = "<group>"; };
+		82CE58D51D05E5100086811F /* logo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo2@2x.png"; path = "Imagenes/logo2@2x.png"; sourceTree = "<group>"; };
+		82CE58D81D05F8050086811F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Imagenes/logo.png; sourceTree = "<group>"; };
+		82CE58D91D05F8050086811F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "Imagenes/logo@2x.png"; sourceTree = "<group>"; };
+		82CE58DC1D0608120086811F /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "Imagenes/bg@2x.png"; sourceTree = "<group>"; };
+		82CE58DD1D0608120086811F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Imagenes/bg.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1749639D1C5D8AC2004D04E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172AED531C6307650057426C /* Utilidades */ = {
+			isa = PBXGroup;
+			children = (
+				172AED571C6307DE0057426C /* Constantes.h */,
+				172AED581C6307DE0057426C /* Constantes.m */,
+				172AED5D1C7405030057426C /* JsonParams.h */,
+				172AED5E1C7405030057426C /* JsonParams.m */,
+			);
+			name = Utilidades;
+			sourceTree = "<group>";
+		};
+		174963971C5D8AC2004D04E8 = {
+			isa = PBXGroup;
+			children = (
+				172AED531C6307650057426C /* Utilidades */,
+				174963BC1C5D8E25004D04E8 /* Ingreso */,
+				174963A21C5D8AC2004D04E8 /* Audismart */,
+				174963A11C5D8AC2004D04E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		174963A11C5D8AC2004D04E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				174963A01C5D8AC2004D04E8 /* Aosmart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		174963A21C5D8AC2004D04E8 /* Audismart */ = {
+			isa = PBXGroup;
+			children = (
+				82CE58CB1D05E2930086811F /* Imagenes */,
+				174963A61C5D8AC2004D04E8 /* AppDelegate.h */,
+				174963A71C5D8AC2004D04E8 /* AppDelegate.m */,
+				174963AF1C5D8AC2004D04E8 /* Assets.xcassets */,
+				174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */,
+				174963B41C5D8AC2004D04E8 /* Info.plist */,
+				174963A31C5D8AC2004D04E8 /* Supporting Files */,
+			);
+			path = Audismart;
+			sourceTree = "<group>";
+		};
+		174963A31C5D8AC2004D04E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				174963A41C5D8AC2004D04E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		174963BC1C5D8E25004D04E8 /* Ingreso */ = {
+			isa = PBXGroup;
+			children = (
+				174963BE1C5D8EF4004D04E8 /* ViewController.h */,
+				174963BF1C5D8EF4004D04E8 /* ViewController.m */,
+				174963AC1C5D8AC2004D04E8 /* Main.storyboard */,
+				172AED4F1C62FC9F0057426C /* ViewControllerLogin.h */,
+				172AED501C62FC9F0057426C /* ViewControllerLogin.m */,
+				172AED5A1C6439480057426C /* ViewControllerRegistroUser.h */,
+				172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */,
+			);
+			name = Ingreso;
+			sourceTree = "<group>";
+		};
+		82CE58CB1D05E2930086811F /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				82CE58DC1D0608120086811F /* bg@2x.png */,
+				82CE58DD1D0608120086811F /* bg.png */,
+				82CE58D81D05F8050086811F /* logo.png */,
+				82CE58D91D05F8050086811F /* logo@2x.png */,
+				82CE58D41D05E5100086811F /* logo2.png */,
+				82CE58D51D05E5100086811F /* logo2@2x.png */,
+				82CE58D01D05E3360086811F /* fondo@2x.png */,
+				82CE58D11D05E3360086811F /* fondo.png */,
+			);
+			name = Imagenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1749639F1C5D8AC2004D04E8 /* Aosmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174963B71C5D8AC2004D04E8 /* Build configuration list for PBXNativeTarget "Aosmart" */;
+			buildPhases = (
+				1749639C1C5D8AC2004D04E8 /* Sources */,
+				1749639D1C5D8AC2004D04E8 /* Frameworks */,
+				1749639E1C5D8AC2004D04E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aosmart;
+			productName = Audismart;
+			productReference = 174963A01C5D8AC2004D04E8 /* Aosmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		174963981C5D8AC2004D04E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Audismart;
+				TargetAttributes = {
+					1749639F1C5D8AC2004D04E8 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1749639B1C5D8AC2004D04E8 /* Build configuration list for PBXProject "Aosmart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 174963971C5D8AC2004D04E8;
+			productRefGroup = 174963A11C5D8AC2004D04E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1749639F1C5D8AC2004D04E8 /* Aosmart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1749639E1C5D8AC2004D04E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174963B31C5D8AC2004D04E8 /* LaunchScreen.storyboard in Resources */,
+				82CE58D61D05E5100086811F /* logo2.png in Resources */,
+				174963B01C5D8AC2004D04E8 /* Assets.xcassets in Resources */,
+				174963AE1C5D8AC2004D04E8 /* Main.storyboard in Resources */,
+				82CE58DA1D05F8050086811F /* logo.png in Resources */,
+				82CE58D21D05E3360086811F /* fondo@2x.png in Resources */,
+				82CE58D71D05E5100086811F /* logo2@2x.png in Resources */,
+				82CE58DB1D05F8050086811F /* logo@2x.png in Resources */,
+				82CE58D31D05E3360086811F /* fondo.png in Resources */,
+				82CE58DF1D0608120086811F /* bg.png in Resources */,
+				82CE58DE1D0608120086811F /* bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1749639C1C5D8AC2004D04E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172AED5F1C7405030057426C /* JsonParams.m in Sources */,
+				172AED591C6307DE0057426C /* Constantes.m in Sources */,
+				172AED511C62FC9F0057426C /* ViewControllerLogin.m in Sources */,
+				172AED5C1C6439480057426C /* ViewControllerRegistroUser.m in Sources */,
+				174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */,
+				174963A51C5D8AC2004D04E8 /* main.m in Sources */,
+				174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		174963AC1C5D8AC2004D04E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174963AD1C5D8AC2004D04E8 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Audismart;
+			sourceTree = "<group>";
+		};
+		174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174963B21C5D8AC2004D04E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		174963B51C5D8AC2004D04E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		174963B61C5D8AC2004D04E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		174963B81C5D8AC2004D04E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audismart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.audismart.Aosmart;
+				PRODUCT_NAME = Aosmart;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		174963B91C5D8AC2004D04E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audismart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.audismart.Aosmart;
+				PRODUCT_NAME = Aosmart;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1749639B1C5D8AC2004D04E8 /* Build configuration list for PBXProject "Aosmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174963B51C5D8AC2004D04E8 /* Debug */,
+				174963B61C5D8AC2004D04E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		174963B71C5D8AC2004D04E8 /* Build configuration list for PBXNativeTarget "Aosmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174963B81C5D8AC2004D04E8 /* Debug */,
+				174963B91C5D8AC2004D04E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 174963981C5D8AC2004D04E8 /* Project object */;
+}
