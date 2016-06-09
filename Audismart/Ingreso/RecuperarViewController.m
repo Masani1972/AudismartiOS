@@ -18,7 +18,7 @@
 @synthesize textFieldEmail;
 @synthesize buttonEnviarContrasena;
 @synthesize jsonParams;
-
+UIAlertView *alert;
     
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,14 +53,15 @@
                                                     if(error == nil)
                                                     {
                                                         NSString *response =[[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
-                                                        if([jsonParams createResponse:response]==nil)
+                                                        NSDictionary *result = [jsonParams createResponseDictionary:response];
+                                                        if(result == nil)
                                                         {
                                                             dispatch_async(dispatch_get_main_queue(), ^{
-                                                                [self success];
+                                                                [self success:result[@"message"]];
                                                             });
                                                         }else{
                                                             dispatch_async(dispatch_get_main_queue(), ^{
-                                                                [self error:[jsonParams createResponse:response]];
+                                                                [self error:result[@"message"]];
                                                             });
                                                         }
                                                     }
@@ -70,7 +71,7 @@
 
 -(void)error:(NSString *)message{
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+    alert = [[UIAlertView alloc] initWithTitle:@"Éxito"
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
@@ -78,11 +79,13 @@
     [alert show];
 }
 
--(void)success{
-    /*UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewControllerRegistroUser"];
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:vc animated:YES completion:NULL];*/
+-(void)success:(NSString *)message{
+    alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
     
 }
 @end

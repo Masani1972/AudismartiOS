@@ -35,7 +35,7 @@
 #pragma Activa la peticion
 - (IBAction)ingresar:(id)sender {
 
-    NSURL *url = [NSURL URLWithString: @"http://aosmart.aosas.com/movil/WS.php"];//[Constantes datos].urlServicios ];
+    NSURL *url = [NSURL URLWithString: @"https://aosmart.aosas.com/movil/WS.php"];//[Constantes datos].urlServicios ];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config  delegate:self delegateQueue:nil];
     
