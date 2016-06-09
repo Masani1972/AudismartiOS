@@ -16,7 +16,7 @@
 		174963AE1C5D8AC2004D04E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963AC1C5D8AC2004D04E8 /* Main.storyboard */; };
 		174963B01C5D8AC2004D04E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174963AF1C5D8AC2004D04E8 /* Assets.xcassets */; };
 		174963B31C5D8AC2004D04E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */; };
-		174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963BF1C5D8EF4004D04E8 /* ViewController.m */; };
+		174963C11C5D8EF4004D04E8 /* RecuperarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174963BF1C5D8EF4004D04E8 /* RecuperarViewController.m */; };
 		82CE58D21D05E3360086811F /* fondo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D01D05E3360086811F /* fondo@2x.png */; };
 		82CE58D31D05E3360086811F /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D11D05E3360086811F /* fondo.png */; };
 		82CE58D61D05E5100086811F /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D41D05E5100086811F /* logo2.png */; };
@@ -44,8 +44,8 @@
 		174963AF1C5D8AC2004D04E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174963B21C5D8AC2004D04E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174963B41C5D8AC2004D04E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		174963BE1C5D8EF4004D04E8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Audismart/Ingreso/ViewController.h; sourceTree = "<group>"; };
-		174963BF1C5D8EF4004D04E8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Audismart/Ingreso/ViewController.m; sourceTree = "<group>"; };
+		174963BE1C5D8EF4004D04E8 /* RecuperarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecuperarViewController.h; path = Audismart/Ingreso/RecuperarViewController.h; sourceTree = "<group>"; };
+		174963BF1C5D8EF4004D04E8 /* RecuperarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecuperarViewController.m; path = Audismart/Ingreso/RecuperarViewController.m; sourceTree = "<group>"; };
 		82CE58D01D05E3360086811F /* fondo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fondo@2x.png"; path = "Imagenes/fondo@2x.png"; sourceTree = "<group>"; };
 		82CE58D11D05E3360086811F /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo.png; path = Imagenes/fondo.png; sourceTree = "<group>"; };
 		82CE58D41D05E5100086811F /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = Imagenes/logo2.png; sourceTree = "<group>"; };
@@ -81,6 +81,7 @@
 		174963971C5D8AC2004D04E8 = {
 			isa = PBXGroup;
 			children = (
+				82CE58E01D090C260086811F /* Recuperar */,
 				172AED531C6307650057426C /* Utilidades */,
 				174963BC1C5D8E25004D04E8 /* Ingreso */,
 				174963A21C5D8AC2004D04E8 /* Audismart */,
@@ -121,8 +122,6 @@
 		174963BC1C5D8E25004D04E8 /* Ingreso */ = {
 			isa = PBXGroup;
 			children = (
-				174963BE1C5D8EF4004D04E8 /* ViewController.h */,
-				174963BF1C5D8EF4004D04E8 /* ViewController.m */,
 				174963AC1C5D8AC2004D04E8 /* Main.storyboard */,
 				172AED4F1C62FC9F0057426C /* ViewControllerLogin.h */,
 				172AED501C62FC9F0057426C /* ViewControllerLogin.m */,
@@ -145,6 +144,15 @@
 				82CE58D11D05E3360086811F /* fondo.png */,
 			);
 			name = Imagenes;
+			sourceTree = "<group>";
+		};
+		82CE58E01D090C260086811F /* Recuperar */ = {
+			isa = PBXGroup;
+			children = (
+				174963BE1C5D8EF4004D04E8 /* RecuperarViewController.h */,
+				174963BF1C5D8EF4004D04E8 /* RecuperarViewController.m */,
+			);
+			name = Recuperar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +239,7 @@
 				172AED5C1C6439480057426C /* ViewControllerRegistroUser.m in Sources */,
 				174963A81C5D8AC2004D04E8 /* AppDelegate.m in Sources */,
 				174963A51C5D8AC2004D04E8 /* main.m in Sources */,
-				174963C11C5D8EF4004D04E8 /* ViewController.m in Sources */,
+				174963C11C5D8EF4004D04E8 /* RecuperarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

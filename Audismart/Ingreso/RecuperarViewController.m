@@ -1,30 +1,29 @@
 //
-//  ViewControllerLogin.m
+//  RecuperarViewController.m
 //  Audismart
 //
-//  Created by Dayana Martinez on 03-02-16.
+//  Created by Dayana Martinez on 30-01-16.
 //  Copyright © 2016 Audismart. All rights reserved.
 //
 
-#import "ViewControllerLogin.h"
+#import "RecuperarViewController.h"
 #import "Constantes.h"
 
-
-@interface ViewControllerLogin ()
+@interface RecuperarViewController ()
 
 @end
 
+@implementation RecuperarViewController
 
-@implementation ViewControllerLogin
-
-@synthesize emai;
-@synthesize contrasena;
+@synthesize textFieldEmail;
+@synthesize buttonEnviarContrasena;
 @synthesize jsonParams;
 
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     jsonParams = [[JsonParams alloc] init];
-    contrasena.secureTextEntry = YES;
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,20 +31,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma Activa la peticion
-- (IBAction)ingresar:(id)sender {
+- (IBAction)buttonEnviarContrasena:(id)sender {
 
-    NSURL *url = [NSURL URLWithString: @"http://aosmart.aosas.com/movil/WS.php"];//[Constantes datos].urlServicios ];
+    NSURL *url = [NSURL URLWithString: [Constantes datos].urlServicios ];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config  delegate:self delegateQueue:nil];
     
-
+    
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     
-    NSDictionary *queryDictionary = @{ @"email": emai.text, @"contrasena": [self md5:contrasena.text], @"ACCION": @"LOGIN"};
-  
+    NSDictionary *queryDictionary = @{ @"email": textFieldEmail.text, @"ACCION": @"RECUPERAR CONTRASENA"};
+    
     NSString *params =[jsonParams createRequets:queryDictionary];
-
+    
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
     
@@ -71,47 +69,20 @@
 }
 
 -(void)error:(NSString *)message{
-
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
-    /*UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                   message:message
-                                                            preferredStyle:UIAlertControllerStyleActionSheet]; // 1
-    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"OK"
-                                                          style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-                                                          }];
-    
-    [alert addAction:firstAction];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self presentViewController:alert animated:YES completion:nil];
-    });*/
 }
 
 -(void)success{
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    /*UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewControllerRegistroUser"];
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:vc animated:YES completion:NULL];
-
-}
-
-- (NSString *) md5:(NSString *) input
-{
-    const char *cStr = [input UTF8String];
-    unsigned char digest[16];
-    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
-    
-    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-        [output appendFormat:@"%02x", digest[i]];
-    
-    return  output;
+    [self presentViewController:vc animated:YES completion:NULL];*/
     
 }
-
 @end

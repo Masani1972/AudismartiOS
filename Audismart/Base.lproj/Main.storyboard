@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -80,21 +80,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-PZ-fyy">
+                                <rect key="frame" x="191" y="565" width="43" height="42"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Auditoría &amp; Outsourcing S.A.S." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gS-7b-C7X">
-                                <rect key="frame" x="90" y="727" width="234" height="21"/>
+                                <rect key="frame" x="92" y="624" width="234" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.63529411764705879" green="0.63137254901960782" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-PZ-fyy">
-                                <rect key="frame" x="191" y="565" width="43" height="42"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="J0E-PZ-fyy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="1iK-TP-pLD"/>
                             <constraint firstItem="e9Q-f2-cT7" firstAttribute="top" secondItem="kIx-hx-vla" secondAttribute="bottom" constant="15" id="2la-u0-v6x"/>
-                            <constraint firstItem="7gS-7b-C7X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="220" id="4d0-TL-z1U"/>
+                            <constraint firstItem="7gS-7b-C7X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="270" id="4d0-TL-z1U"/>
                             <constraint firstItem="MAY-vb-1n1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="8kd-b2-CrC"/>
                             <constraint firstItem="e9Q-f2-cT7" firstAttribute="centerX" secondItem="kIx-hx-vla" secondAttribute="centerX" id="E5Q-Hs-HPI"/>
                             <constraint firstItem="MAY-vb-1n1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="Fvx-Q3-8Wo"/>
@@ -770,7 +770,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fnp-qq-Yxz" secondAttribute="trailing" constant="-20" id="YGl-cg-dxf"/>
                             <constraint firstItem="dCn-M4-77g" firstAttribute="top" secondItem="UWR-l0-EMQ" secondAttribute="bottom" constant="222" id="eLZ-M4-ff3"/>
                             <constraint firstItem="t0J-kc-izZ" firstAttribute="top" secondItem="dCn-M4-77g" secondAttribute="bottom" constant="15" id="eag-M4-ccq"/>
-                            <constraint firstItem="DSX-S7-h4U" firstAttribute="centerX" secondItem="L7k-1s-Qb8" secondAttribute="centerX" constant="-10" id="gyn-zS-wTf"/>
+                            <constraint firstItem="DSX-S7-h4U" firstAttribute="centerX" secondItem="L7k-1s-Qb8" secondAttribute="centerX" constant="-5" id="gyn-zS-wTf"/>
                             <constraint firstItem="dCn-M4-77g" firstAttribute="centerX" secondItem="L7k-1s-Qb8" secondAttribute="centerX" id="hrL-UY-ddp"/>
                             <constraint firstItem="x04-Uj-l9s" firstAttribute="centerX" secondItem="L7k-1s-Qb8" secondAttribute="centerX" id="ht5-4O-byp"/>
                             <constraint firstItem="t0J-kc-izZ" firstAttribute="centerX" secondItem="L7k-1s-Qb8" secondAttribute="centerX" constant="-77" id="nQ1-Y9-ube"/>
@@ -792,10 +792,10 @@
             </objects>
             <point key="canvasLocation" x="97" y="1172"/>
         </scene>
-        <!--View Controller-->
+        <!--Recuperar View Controller-->
         <scene sceneID="z1J-B8-grf">
             <objects>
-                <viewController id="zKK-a3-WYg" sceneMemberID="viewController">
+                <viewController id="zKK-a3-WYg" customClass="RecuperarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JHM-L4-6g0"/>
                         <viewControllerLayoutGuide type="bottom" id="76C-hO-dgP"/>
@@ -819,11 +819,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8f-cw-wHq">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="MX4-CN-QA3">
-                                <rect key="frame" x="95" y="124" width="240" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhi-FA-zmk">
-                                <rect key="frame" x="322" y="225" width="42" height="21"/>
+                                <rect key="frame" x="283" y="260" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -868,13 +865,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonEnviarContrasena:" destination="zKK-a3-WYg" eventType="touchUpInside" id="Z4j-jX-fNh"/>
                                     <action selector="ingresar:" destination="U44-sy-lyD" eventType="touchUpInside" id="aHZ-ZE-SSo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Auditoría &amp; Outsourcing S.A.S." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYa-sV-paL">
+                                <rect key="frame" x="90" y="625" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.63529411759999999" green="0.63137254899999995" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fPU-Ik-ztv">
+                                <rect key="frame" x="177" y="518" width="45" height="44"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="MX4-CN-QA3">
+                                <rect key="frame" x="84" y="148" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fPU-Ik-ztv" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" id="1ny-1w-jmQ"/>
                             <constraint firstItem="MX4-CN-QA3" firstAttribute="centerY" secondItem="XGg-Ye-7ay" secondAttribute="centerY" constant="-150" id="AR2-Mj-p9X"/>
+                            <constraint firstItem="RYa-sV-paL" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" id="DMY-XR-9ug"/>
                             <constraint firstItem="Pof-DN-hB4" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" constant="-99" id="Frn-GO-Cke"/>
                             <constraint firstItem="veY-L5-Oqa" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" id="INf-E5-eJQ"/>
                             <constraint firstItem="ZCB-bD-5Py" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" id="NgR-MK-mog"/>
@@ -886,9 +898,15 @@
                             <constraint firstItem="ZCB-bD-5Py" firstAttribute="top" secondItem="JgP-qT-kKC" secondAttribute="bottom" constant="12" id="pVg-UM-eQw"/>
                             <constraint firstItem="Uhi-FA-zmk" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" constant="90" id="rP1-3f-6nI"/>
                             <constraint firstItem="JgP-qT-kKC" firstAttribute="centerX" secondItem="XGg-Ye-7ay" secondAttribute="centerX" id="sOP-wE-0rs"/>
+                            <constraint firstItem="fPU-Ik-ztv" firstAttribute="centerY" secondItem="XGg-Ye-7ay" secondAttribute="centerY" constant="145" id="zaH-OY-gqt"/>
+                            <constraint firstItem="RYa-sV-paL" firstAttribute="centerY" secondItem="XGg-Ye-7ay" secondAttribute="centerY" constant="270" id="zqv-XH-Q44"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="buttonEnviarContrasena" destination="ZCB-bD-5Py" id="zhQ-Jm-Clz"/>
+                        <outlet property="textFieldEmail" destination="JgP-qT-kKC" id="V0h-Ka-rPg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIX-bZ-3wL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -901,7 +919,7 @@
         <image name="logo.png" width="152" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ax1-QK-b7E"/>
         <segue reference="4lb-Sb-27C"/>
+        <segue reference="ax1-QK-b7E"/>
     </inferredMetricsTieBreakers>
 </document>

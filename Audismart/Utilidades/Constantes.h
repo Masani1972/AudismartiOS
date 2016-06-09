@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Constantes : NSObject
+{
+    NSString *urlServicios;
+}
+
+@property (nonatomic, retain) NSString *urlServicios;
+
++ (Constantes*) datos;
 
 @end

@@ -6,9 +6,10 @@
 //  Copyright © 2016 Audismart. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ViewControllerRegistroUser : ViewController
+@interface ViewControllerRegistroUser : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIScrollView *scroll;
 
 @end
