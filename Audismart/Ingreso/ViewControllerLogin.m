@@ -25,6 +25,8 @@
     [super viewDidLoad];
     jsonParams = [[JsonParams alloc] init];
     contrasena.secureTextEntry = YES;
+    self.emai.delegate = self;
+    self.contrasena.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,7 +37,7 @@
 #pragma Activa la peticion
 - (IBAction)ingresar:(id)sender {
 
-    NSURL *url = [NSURL URLWithString: @"http://aosmart.aosas.com/movil/WS.php"];//[Constantes datos].urlServicios ];
+    NSURL *url = [NSURL URLWithString:[Constantes datos].urlServicios ];
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config  delegate:self delegateQueue:nil];
     
@@ -70,33 +72,22 @@
     [dataTask resume];
 }
 
--(void)error:(NSString *)message{
-
+-(void)error:(NSString *)message
+{
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
-    /*UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                   message:message
-                                                            preferredStyle:UIAlertControllerStyleActionSheet]; // 1
-    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"OK"
-                                                          style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-                                                          }];
-    
-    [alert addAction:firstAction];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self presentViewController:alert animated:YES completion:nil];
-    });*/
 }
 
--(void)success{
+-(void)success
+{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewControllerRegistroUser"];
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:vc animated:YES completion:NULL];
-
 }
 
 - (NSString *) md5:(NSString *) input
@@ -112,6 +103,13 @@
     
     return  output;
     
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    //limit the size :
+    int limit = 250;
+    return !([textField.text length]>=limit && [string length] > range.length);
 }
 
 @end

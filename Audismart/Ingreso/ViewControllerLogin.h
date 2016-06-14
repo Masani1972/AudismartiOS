@@ -11,7 +11,7 @@
 #import "JsonParams.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@interface ViewControllerLogin : UIViewController
+@interface ViewControllerLogin : UIViewController<UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *emai;
 @property (strong, nonatomic) IBOutlet UITextField *contrasena;

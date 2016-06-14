@@ -24,6 +24,7 @@
     [super viewDidLoad];
     jsonParams = [[JsonParams alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
+    self.textFieldEmail.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,5 +85,12 @@
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:vc animated:YES completion:NULL];*/
     
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    //limit the size :
+    int limit = 250;
+    return !([textField.text length]>=limit && [string length] > range.length);
 }
 @end

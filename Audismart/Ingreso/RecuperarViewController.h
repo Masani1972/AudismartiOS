@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JsonParams.h"
 
-@interface RecuperarViewController : UIViewController
+@interface RecuperarViewController : UIViewController<UITextFieldDelegate>
 {
     IBOutlet UITextField *textFieldEmail;
     
