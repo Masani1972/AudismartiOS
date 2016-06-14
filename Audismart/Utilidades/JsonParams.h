@@ -12,5 +12,6 @@
 
 - (NSString *)createRequets:(NSDictionary *)queryDictionary;
 - (NSString *)createResponse:(NSString *)response;
+- (NSDictionary *)createResponseDictionary:(NSString *)response;
 
 @end

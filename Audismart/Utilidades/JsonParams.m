@@ -28,13 +28,22 @@
 
 - (NSString *)createResponse:(NSString *)response{
     NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-    NSString *categoryString=result[@"error"];
+    NSString *categoryString = [result[@"error"] stringValue];
     if([categoryString isEqualToString:@"0"])
-        return nil;
+        return @"";
     else
         return result[@"message"];
     
 }
 
+- (NSDictionary *)createResponseDictionary:(NSString *)response{
+    NSError *er = nil;
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&er];
+    if (er != nil) {
+        return nil;
+    }
+    return result;
+    
+}
 
 @end

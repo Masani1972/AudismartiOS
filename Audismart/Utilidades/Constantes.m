@@ -18,7 +18,7 @@ static Constantes *datos = nil;
     if (datos == nil)
     {
         datos = [[super allocWithZone:NULL] init];
-        datos.urlServicios = @"http://aosmart.aosas.com/movil/WS.php";
+        datos.urlServicios = @"https://aosmart.aosas.com/movil/WS.php";
     }
     return datos;
 }
