@@ -28,7 +28,7 @@
 
 - (NSString *)createResponse:(NSString *)response{
     NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-    NSString *categoryString = [result[@"error"] stringValue];
+    NSString *categoryString = result[@"error"];//[result[@"error"] stringValue];
     if([categoryString isEqualToString:@"0"])
         return @"";
     else

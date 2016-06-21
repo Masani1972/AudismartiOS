@@ -55,7 +55,8 @@ UIAlertView *alert;
                                                     {
                                                         NSString *response =[[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
                                                         NSDictionary *result = [jsonParams createResponseDictionary:response];
-                                                        if(result == nil)
+                                                        NSString *categoryString = [result[@"error"] stringValue];
+                                                        if([categoryString isEqualToString:@"0"])
                                                         {
                                                             dispatch_async(dispatch_get_main_queue(), ^{
                                                                 [self success:result[@"message"]];
@@ -72,7 +73,7 @@ UIAlertView *alert;
 
 -(void)error:(NSString *)message{
     
-    alert = [[UIAlertView alloc] initWithTitle:@"Éxito"
+    alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
@@ -81,7 +82,7 @@ UIAlertView *alert;
 }
 
 -(void)success:(NSString *)message{
-    alert = [[UIAlertView alloc] initWithTitle:@"Error"
+    alert = [[UIAlertView alloc] initWithTitle:@"Éxito"
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
