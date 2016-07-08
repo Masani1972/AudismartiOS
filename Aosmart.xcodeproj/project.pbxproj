@@ -25,6 +25,7 @@
 		82CE58DB1D05F8050086811F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58D91D05F8050086811F /* logo@2x.png */; };
 		82CE58DE1D0608120086811F /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58DC1D0608120086811F /* bg@2x.png */; };
 		82CE58DF1D0608120086811F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58DD1D0608120086811F /* bg.png */; };
+		82EB5D841D2F617B0019AC46 /* RegistroEmpresa.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB5D831D2F617B0019AC46 /* RegistroEmpresa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		82CE58D91D05F8050086811F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "Imagenes/logo@2x.png"; sourceTree = "<group>"; };
 		82CE58DC1D0608120086811F /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "Imagenes/bg@2x.png"; sourceTree = "<group>"; };
 		82CE58DD1D0608120086811F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Imagenes/bg.png; sourceTree = "<group>"; };
+		82EB5D821D2F61410019AC46 /* RegistroEmpresa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistroEmpresa.h; path = Audismart/Ingreso/RegistroEmpresa.h; sourceTree = "<group>"; };
+		82EB5D831D2F617B0019AC46 /* RegistroEmpresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistroEmpresa.m; path = Audismart/Ingreso/RegistroEmpresa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				172AED501C62FC9F0057426C /* ViewControllerLogin.m */,
 				172AED5A1C6439480057426C /* ViewControllerRegistroUser.h */,
 				172AED5B1C6439480057426C /* ViewControllerRegistroUser.m */,
+				82EB5D821D2F61410019AC46 /* RegistroEmpresa.h */,
+				82EB5D831D2F617B0019AC46 /* RegistroEmpresa.m */,
 			);
 			name = Ingreso;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EB5D841D2F617B0019AC46 /* RegistroEmpresa.m in Sources */,
 				172AED5F1C7405030057426C /* JsonParams.m in Sources */,
 				172AED591C6307DE0057426C /* Constantes.m in Sources */,
 				172AED511C62FC9F0057426C /* ViewControllerLogin.m in Sources */,

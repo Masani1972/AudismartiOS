@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="161"/>
+            <point key="canvasLocation" x="249" y="125"/>
         </scene>
         <!--View Controller Registro User-->
         <scene sceneID="eQ6-5I-3us">
@@ -672,10 +672,10 @@
             </objects>
             <point key="canvasLocation" x="647" y="1172"/>
         </scene>
-        <!--View Controller Registro User-->
+        <!--Registro Empresa-->
         <scene sceneID="XEb-hP-T7E">
             <objects>
-                <viewController id="Lgk-io-YKw" customClass="ViewControllerRegistroUser" sceneMemberID="viewController">
+                <viewController id="Lgk-io-YKw" customClass="RegistroEmpresa" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u3a-pf-GKa"/>
                         <viewControllerLayoutGuide type="bottom" id="laO-KG-xCP"/>
@@ -684,6 +684,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ly8-0p-b3p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="JOr-Bp-SQt"/>
+                                </constraints>
+                                <color key="tintColor" red="0.43137254899999999" green="0.42745098040000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.43137254899999999" green="0.42745098040000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Registro" id="j0p-i1-2nr">
+                                        <barButtonItem key="leftBarButtonItem" title="Atrás" id="hqT-A0-e3i">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="hhT-W3-1sf" kind="showDetail" id="Q1M-uc-9Wq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Paso 2 de 2" id="O1m-8D-Z8z">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3c-IM-WwE">
                                 <rect key="frame" x="0.0" y="64" width="414" height="892"/>
                                 <subviews>
@@ -866,6 +890,10 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wb-cq-pxb">
+                                        <rect key="frame" x="0.0" y="256" width="414" height="216"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </pickerView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="N4w-4r-RZ0" firstAttribute="top" secondItem="Ey0-ZI-bvz" secondAttribute="bottom" constant="8" symbolic="YES" id="1GE-fK-iIl"/>
@@ -874,6 +902,7 @@
                                     <constraint firstItem="FAu-nN-XYP" firstAttribute="top" secondItem="Ucq-RY-JYf" secondAttribute="bottom" constant="8" symbolic="YES" id="2qM-7c-QYf"/>
                                     <constraint firstItem="FAu-nN-XYP" firstAttribute="leading" secondItem="aha-za-G38" secondAttribute="leading" id="5gz-Ix-sJ1"/>
                                     <constraint firstItem="epN-mm-fRX" firstAttribute="leading" secondItem="92k-C6-SJS" secondAttribute="trailing" constant="8" symbolic="YES" id="5kV-Hq-bC7"/>
+                                    <constraint firstItem="8wb-cq-pxb" firstAttribute="top" secondItem="8To-3Y-3ON" secondAttribute="bottom" constant="7" id="7kQ-Ay-HRh"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="gbK-qD-KE5" secondAttribute="leading" id="9S5-BO-iTY"/>
                                     <constraint firstItem="tRh-K0-3lM" firstAttribute="leading" secondItem="pA0-VW-2Tb" secondAttribute="trailing" constant="8" id="9TT-et-ccX"/>
                                     <constraint firstItem="pA0-VW-2Tb" firstAttribute="centerY" secondItem="tRh-K0-3lM" secondAttribute="centerY" id="AMs-Eg-SO5"/>
@@ -942,6 +971,7 @@
                                     <constraint firstItem="dTO-iV-I87" firstAttribute="trailing" secondItem="S2j-U4-YXP" secondAttribute="trailing" id="tu5-1e-FPx"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="S2j-U4-YXP" secondAttribute="leading" id="u8b-Wj-1ht"/>
                                     <constraint firstItem="pA0-VW-2Tb" firstAttribute="leading" secondItem="92k-C6-SJS" secondAttribute="leading" id="uGd-11-uFX"/>
+                                    <constraint firstItem="MdK-Qd-LQ6" firstAttribute="top" secondItem="8wb-cq-pxb" secondAttribute="bottom" constant="7" id="uet-36-nkV"/>
                                     <constraint firstItem="aha-za-G38" firstAttribute="top" secondItem="kvg-EO-yiW" secondAttribute="bottom" constant="4" id="vE9-7S-bvU"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="dTO-iV-I87" secondAttribute="leading" id="wed-2n-gL3"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="iZ2-5O-8a9" secondAttribute="leading" id="xFD-5Z-aak"/>
@@ -970,30 +1000,6 @@
                                     </mask>
                                 </variation>
                             </scrollView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ly8-0p-b3p">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="JOr-Bp-SQt"/>
-                                </constraints>
-                                <color key="tintColor" red="0.43137254899999999" green="0.42745098040000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="barTintColor" red="0.43137254899999999" green="0.42745098040000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Registro" id="j0p-i1-2nr">
-                                        <barButtonItem key="leftBarButtonItem" title="Atrás" id="hqT-A0-e3i">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="hhT-W3-1sf" kind="showDetail" id="Q1M-uc-9Wq"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Paso 2 de 2" id="O1m-8D-Z8z">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1009,10 +1015,14 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="pickerDepartamento" destination="8wb-cq-pxb" id="P5d-7t-fZs"/>
+                        <outlet property="textDepartamento" destination="8To-3Y-3ON" id="HAq-no-fxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxV-3T-8p4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1510" y="213"/>
+            <point key="canvasLocation" x="1511" y="225"/>
         </scene>
     </scenes>
     <resources>
@@ -1023,6 +1033,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="hUs-fl-hMY"/>
         <segue reference="Q1M-uc-9Wq"/>
-        <segue reference="ax1-QK-b7E"/>
+        <segue reference="iK0-hA-weM"/>
     </inferredMetricsTieBreakers>
 </document>
