@@ -26,6 +26,9 @@
 		82CE58DE1D0608120086811F /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58DC1D0608120086811F /* bg@2x.png */; };
 		82CE58DF1D0608120086811F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CE58DD1D0608120086811F /* bg.png */; };
 		82EB5D841D2F617B0019AC46 /* RegistroEmpresa.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB5D831D2F617B0019AC46 /* RegistroEmpresa.m */; };
+		D0EB200A1D50C71D00621B23 /* periodicidad.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0EB20091D50C71D00621B23 /* periodicidad.plist */; };
+		D0EB200C1D50C88B00621B23 /* categoria.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0EB200B1D50C88B00621B23 /* categoria.plist */; };
+		D0EB200E1D50C99000621B23 /* documento.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0EB200D1D50C99000621B23 /* documento.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		82CE58DD1D0608120086811F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Imagenes/bg.png; sourceTree = "<group>"; };
 		82EB5D821D2F61410019AC46 /* RegistroEmpresa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistroEmpresa.h; path = Audismart/Ingreso/RegistroEmpresa.h; sourceTree = "<group>"; };
 		82EB5D831D2F617B0019AC46 /* RegistroEmpresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistroEmpresa.m; path = Audismart/Ingreso/RegistroEmpresa.m; sourceTree = "<group>"; };
+		D0EB20091D50C71D00621B23 /* periodicidad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = periodicidad.plist; sourceTree = "<group>"; };
+		D0EB200B1D50C88B00621B23 /* categoria.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categoria.plist; sourceTree = "<group>"; };
+		D0EB200D1D50C99000621B23 /* documento.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = documento.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				174963B11C5D8AC2004D04E8 /* LaunchScreen.storyboard */,
 				174963B41C5D8AC2004D04E8 /* Info.plist */,
 				174963A31C5D8AC2004D04E8 /* Supporting Files */,
+				D0EB20091D50C71D00621B23 /* periodicidad.plist */,
+				D0EB200B1D50C88B00621B23 /* categoria.plist */,
+				D0EB200D1D50C99000621B23 /* documento.plist */,
 			);
 			path = Audismart;
 			sourceTree = "<group>";
@@ -220,14 +229,17 @@
 				174963B31C5D8AC2004D04E8 /* LaunchScreen.storyboard in Resources */,
 				82CE58D61D05E5100086811F /* logo2.png in Resources */,
 				174963B01C5D8AC2004D04E8 /* Assets.xcassets in Resources */,
+				D0EB200E1D50C99000621B23 /* documento.plist in Resources */,
 				174963AE1C5D8AC2004D04E8 /* Main.storyboard in Resources */,
 				82CE58DA1D05F8050086811F /* logo.png in Resources */,
 				82CE58D21D05E3360086811F /* fondo@2x.png in Resources */,
 				82CE58D71D05E5100086811F /* logo2@2x.png in Resources */,
+				D0EB200A1D50C71D00621B23 /* periodicidad.plist in Resources */,
 				82CE58DB1D05F8050086811F /* logo@2x.png in Resources */,
 				82CE58D31D05E3360086811F /* fondo.png in Resources */,
 				82CE58DF1D0608120086811F /* bg.png in Resources */,
 				82CE58DE1D0608120086811F /* bg@2x.png in Resources */,
+				D0EB200C1D50C88B00621B23 /* categoria.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
