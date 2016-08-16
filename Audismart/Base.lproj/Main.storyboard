@@ -732,7 +732,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8To-3Y-3ON">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8To-3Y-3ON">
                                         <rect key="frame" x="20" y="219" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -743,7 +743,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceA-No-rIc">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceA-No-rIc">
                                         <rect key="frame" x="20" y="285" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -754,7 +754,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-iV-I87">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-iV-I87">
                                         <rect key="frame" x="20" y="349" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -798,7 +798,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAu-nN-XYP">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAu-nN-XYP">
                                         <rect key="frame" x="20" y="674" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -817,7 +817,7 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aha-za-G38">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aha-za-G38">
                                         <rect key="frame" x="20" y="613" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -890,10 +890,6 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wb-cq-pxb">
-                                        <rect key="frame" x="-1" y="890" width="414" height="216"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </pickerView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="N4w-4r-RZ0" firstAttribute="top" secondItem="Ey0-ZI-bvz" secondAttribute="bottom" constant="8" symbolic="YES" id="1GE-fK-iIl"/>
@@ -902,7 +898,6 @@
                                     <constraint firstItem="FAu-nN-XYP" firstAttribute="top" secondItem="Ucq-RY-JYf" secondAttribute="bottom" constant="8" symbolic="YES" id="2qM-7c-QYf"/>
                                     <constraint firstItem="FAu-nN-XYP" firstAttribute="leading" secondItem="aha-za-G38" secondAttribute="leading" id="5gz-Ix-sJ1"/>
                                     <constraint firstItem="epN-mm-fRX" firstAttribute="leading" secondItem="92k-C6-SJS" secondAttribute="trailing" constant="8" symbolic="YES" id="5kV-Hq-bC7"/>
-                                    <constraint firstItem="8wb-cq-pxb" firstAttribute="top" secondItem="8To-3Y-3ON" secondAttribute="bottom" constant="7" id="7kQ-Ay-HRh"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="gbK-qD-KE5" secondAttribute="leading" id="9S5-BO-iTY"/>
                                     <constraint firstItem="tRh-K0-3lM" firstAttribute="leading" secondItem="pA0-VW-2Tb" secondAttribute="trailing" constant="8" id="9TT-et-ccX"/>
                                     <constraint firstItem="pA0-VW-2Tb" firstAttribute="centerY" secondItem="tRh-K0-3lM" secondAttribute="centerY" id="AMs-Eg-SO5"/>
@@ -971,7 +966,6 @@
                                     <constraint firstItem="dTO-iV-I87" firstAttribute="trailing" secondItem="S2j-U4-YXP" secondAttribute="trailing" id="tu5-1e-FPx"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="S2j-U4-YXP" secondAttribute="leading" id="u8b-Wj-1ht"/>
                                     <constraint firstItem="pA0-VW-2Tb" firstAttribute="leading" secondItem="92k-C6-SJS" secondAttribute="leading" id="uGd-11-uFX"/>
-                                    <constraint firstItem="MdK-Qd-LQ6" firstAttribute="top" secondItem="8wb-cq-pxb" secondAttribute="bottom" constant="7" id="uet-36-nkV"/>
                                     <constraint firstItem="aha-za-G38" firstAttribute="top" secondItem="kvg-EO-yiW" secondAttribute="bottom" constant="4" id="vE9-7S-bvU"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="dTO-iV-I87" secondAttribute="leading" id="wed-2n-gL3"/>
                                     <constraint firstItem="r8W-N6-n7g" firstAttribute="leading" secondItem="iZ2-5O-8a9" secondAttribute="leading" id="xFD-5Z-aak"/>
@@ -1016,8 +1010,19 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
-                        <outlet property="pickerDepartamento" destination="8wb-cq-pxb" id="P5d-7t-fZs"/>
-                        <outlet property="textDepartamento" destination="8To-3Y-3ON" id="HAq-no-fxf"/>
+                        <outlet property="btFinalizarREgistro" destination="0Et-AB-zeR" id="ah1-5G-E5p"/>
+                        <outlet property="scrollView" destination="j3c-IM-WwE" id="iff-q9-Oua"/>
+                        <outlet property="switchContribuyente" destination="pA0-VW-2Tb" id="uuJ-7a-OOR"/>
+                        <outlet property="switchImpuesto" destination="92k-C6-SJS" id="UO7-ZH-Vf5"/>
+                        <outlet property="tfCiudad" destination="ceA-No-rIc" id="LJp-e0-9St"/>
+                        <outlet property="tfDepartamento" destination="8To-3Y-3ON" id="Y2G-fz-5Ra"/>
+                        <outlet property="tfFechaRegistroMercantil" destination="MdK-Qd-LQ6" id="x5y-h9-YeG"/>
+                        <outlet property="tfIngresos" destination="r5C-Z1-uBB" id="TqJ-yY-dmh"/>
+                        <outlet property="tfNombreEmpresa" destination="N4w-4r-RZ0" id="6rL-Gt-svW"/>
+                        <outlet property="tfNumeroDocumento" destination="S2j-U4-YXP" id="Wrk-xo-WwH"/>
+                        <outlet property="tfPeriodicidad" destination="aha-za-G38" id="VEh-00-ajI"/>
+                        <outlet property="tfRegimen" destination="FAu-nN-XYP" id="2Ww-CZ-7Qu"/>
+                        <outlet property="tfTipodocumento" destination="dTO-iV-I87" id="KrX-AO-PER"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxV-3T-8p4" userLabel="First Responder" sceneMemberID="firstResponder"/>
